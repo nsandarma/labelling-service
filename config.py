@@ -8,6 +8,7 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_RECORD_QUERIES = True
     SECRET_KEY = os.getenv('SECRET_KEY')
+    JWT_SECRET_KEY = os.getenv('SECRET_KEY')
     UPLOAD_FOLDER = os.path.join(os.getcwd(),'db')
     DATASET_FOLDER = os.path.join(os.getcwd(),'db')
     TEMPLATES_AUTO_RELOAD = True
